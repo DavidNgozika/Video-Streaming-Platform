@@ -15,3 +15,7 @@ body {
     background: rgb(75, 75, 134);
 }
 
+/* Navigation styles */
+nav.navbar {
+    display: flex;
+}
