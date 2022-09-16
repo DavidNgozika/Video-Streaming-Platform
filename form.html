@@ -12,8 +12,14 @@
         <div class="logo-div">
             <img id="logo" src="images/Flixia.PNG" alt="logo">
         </div>
-        <p>Sign up to create an Account with Flixia</p>
-        <button id="sign-up-btn">Sign up</button>
+        <p>Sign up for an Account with Flixia</p>
+        <button
+            onclick="document.querySelector('#my-modal')
+            .style.display = 'block'"
+            id="sign-up-btn"
+        >
+            Sign up
+        </button>
     </div>
 
     <div id="my-modal" class="modal">
@@ -55,7 +61,7 @@
                     <a href="#">Terms & Condition</a>.
                 </p>
 
-                <div>
+                <div class="form-btns">
                     <button 
                         onclick="document.querySelector('#my-modal')
                         .style.display = 'none'"
