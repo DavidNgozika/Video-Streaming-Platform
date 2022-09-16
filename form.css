@@ -1,0 +1,17 @@
+
+/* General styling */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0;
+    color: #222;
+    background: rgb(75, 75, 134);
+    background-color: lightgrey;
+}
+
