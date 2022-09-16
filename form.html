@@ -18,16 +18,55 @@
 
     <div id="my-modal" class="modal">
         <span 
-            onclick="document.querySelector('my-modal').style.display = 'none'"
+            onclick="document.querySelector('#my-modal')
+            .style.display = 'none'"
             class="close-form" title="Close Form Modal"
         >
             &times;
         </span>
         <form class="form-modal-content" action="index.html">
             <div class="container">
-                
+                <h1>Sign Up</h1>
+                <p>Please fill this form to create an Account with Flixia</p>
+                <hr>
+                <label for=""><strong>Email</strong></label>
+                <input 
+                    type="text" placeholder="Enter Email" 
+                    name="email" required
+                >
+                <label for="password"><strong>Password</strong></label>
+                <input 
+                    type="password" placeholder="Enter Password"
+                    name="password" required
+                >
+                <label for="password-rep">
+                    <strong>Repeat Password</strong>
+                </label>
+                <input 
+                    type="password" placeholder="Repeat Password" 
+                    name="password-rep" required
+                >
+                <label>
+                    <input type="checkbox" name="remember" checked>
+                    Remember me
+                </label> 
+                <p>
+                    Be creating an Account you agree to our 
+                    <a href="#">Terms & Condition</a>.
+                </p>
+
+                <div>
+                    <button 
+                        onclick="document.querySelector('#my-modal')
+                        .style.display = 'none'"
+                        type="button" class="cancel-btn"
+                    >
+                        Cancel
+                    </button>
+                    <button class="sign-up-btn">Sign Up</button>
+                </div>
             </div>
-        </form>
+        </form> 
     </div>
 </body>
 </html>
