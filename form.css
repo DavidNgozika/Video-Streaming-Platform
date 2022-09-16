@@ -15,3 +15,36 @@ body {
     background-color: lightgrey;
 }
 
+/* styles before the modal displays */
+
+div.launch-pad {
+    /* border: 1px solid black; */
+    text-align: center;
+}
+
+div.logo-div {
+    margin-top: 2rem;
+}
+
+#logo {
+    border-radius: 15px;
+    width: 250px;
+    margin-bottom: 1rem;
+    box-shadow: 0 1px 5px black;
+}
+
+#sign-up-btn {
+    color: whitesmoke;
+    width: 7.5rem;
+    height: 2rem;
+    font-size: 120%;
+    background-color: #396;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#sign-up-btn:hover {
+    box-shadow: 0 1px 5px black;
+    /* color: #444; */
+}
