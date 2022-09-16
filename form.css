@@ -32,10 +32,6 @@ div.launch-pad p {
     color: whitesmoke;
 }
 
-div.logo-div {
-    margin-top: 2rem;
-}
-
 #logo {
     border-radius: 15px;
     width: 40%;
@@ -156,7 +152,7 @@ hr {
 
 @media only screen and (max-width: 600px) {
     #logo {
-        width: 60%;
+        width: 70%;
     }
 
     div.form-btns {
