@@ -15,11 +15,17 @@ body {
     background-color: #555;
 }
 
+button {
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 /* styles before the modal displays */
 
 div.launch-pad {
     text-align: center;
-    margin: 0.5rem;
+    margin-top: 4rem;
 }
 
 div.launch-pad p {
@@ -32,20 +38,14 @@ div.logo-div {
 
 #logo {
     border-radius: 15px;
-    max-width: 70%;
+    width: 40%;
     margin-bottom: 2rem;
     box-shadow: 0 1px 5px black;
 }
 
-button {
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
 #sign-up-btn {
     color: whitesmoke;
-    width: 40%;
+    width: 8rem;
     height: 2.5rem;
     font-size: 120%;
     background-color: #396;
@@ -76,6 +76,7 @@ input[type=password]:focus {
 .cancel-btn {
     padding: 14px 20px;
     background-color: #ff4d4d;
+    background-color: #f33;
     font-size: 120%;
     color: #333;
     border-top-right-radius: 0;
@@ -83,10 +84,12 @@ input[type=password]:focus {
 }
 
 .cancel-btn:hover {
-    background-color: #f33;
+    background-color: #b30000;
+    color: whitesmoke;
 }
 
 .submit-btn {
+    padding: 14px 20px;
     background-color: #00b300;
     font-size: 120%;
     color: whitesmoke;
@@ -95,7 +98,7 @@ input[type=password]:focus {
 }
 
 .submit-btn:hover {
-    background-color: #090;
+    background-color: #006600;
 }
 
 div.form-btns {
@@ -151,3 +154,49 @@ hr {
   cursor: pointer;
 }
 
+@media only screen and (max-width: 600px) {
+    #logo {
+        width: 60%;
+    }
+
+    div.form-btns {
+        flex-direction: column-reverse;
+        margin-top: 1.5rem;
+    }
+
+    div.form-btns button {
+        width: 100%;
+    }
+
+    .submit-btn {
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #logo {
+        max-width: 45%;
+    }
+
+    #sign-up-btn {
+        width: 10rem;
+    }
+
+    .form-modal-content {
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    #logo {
+        width: 35%;
+    }
+
+    #sign-up-btn {
+        width: 12rem;
+    }
+
+    .form-modal-content {
+        width: 50%;
+    }
+}
