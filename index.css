@@ -11,7 +11,7 @@ html {
 body {
     margin: 0;
     color: #222;
-    background-color: lightgrey;
+    /* background-color: lightgrey; */
     /* background: rgb(75, 75, 134); */
 }
 
@@ -19,6 +19,7 @@ body {
 nav.navbar {
     display: flex;
     flex-direction: column;
+    background-color: #666;
 }
 
 div.top-nav {
@@ -46,6 +47,7 @@ img#logo {
     margin-left: 1.5rem;
     width: 2.75rem;
     height: 2.75rem;
+    cursor: pointer;
 }
 
 img#profile {
@@ -61,8 +63,7 @@ img#profile {
 div.bottom-nav {
     display: flex;
     justify-content: space-evenly;
-    /* background-color: coral; */
-    color: black;
+    color: white;
     max-width: 100%;
 }
 
@@ -73,7 +74,7 @@ div.bottom-nav {
 div.bottom-nav div {
     display: flex;
     align-items: center;
-    border: 1px solid black;
+    border: 1px solid #222;
     border-radius: 20px;
     padding: 0.25rem 0.5rem;
     margin: 0.5rem 0;
@@ -83,6 +84,12 @@ div.bottom-nav div:hover {
     background-color: #333;
     color: #ddd;
     cursor: pointer;
+}
+
+/* Main section styles */
+.video-contents {
+    display: flex;
+    flex-direction: column;
 }
 
 .thumbnail-box {
@@ -113,7 +120,6 @@ div.bottom-nav div:hover {
 }
 
 .vd-details {
-    /* margin-top: -7px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -145,8 +151,15 @@ div.bottom-nav div:hover {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
-    background-color: dodgerblue;
+    background-color: #444;
     padding: 1rem;
-    position: fixed;
-    bottom: 0;
+    /* position: fixed;
+    bottom: 0; */
+}
+
+.home {
+    justify-self: center;
+    align-self: center;
+    width: 3.5rem;
+    height: 3.5rem;
 }
