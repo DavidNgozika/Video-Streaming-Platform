@@ -38,7 +38,7 @@ div.top-nav {
 img#logo {
     border-radius: 10px;
     width: 8rem;
-    height: 85%;
+    height: 80%;
     margin-top: 0.5rem;
     margin-left: 1rem;
     cursor: pointer;
@@ -90,6 +90,7 @@ div.bottom-nav div {
     border-radius: 20px;
     padding: 0.25rem 0.5rem;
     margin: 0.5rem 0;
+    transition: all 0.25s;
 }
 
 div.bottom-nav div:hover {
@@ -108,6 +109,7 @@ div.bottom-nav div:hover {
     position: relative;
     margin-bottom: -.85rem;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .thumbnail {
@@ -118,6 +120,38 @@ div.bottom-nav div:hover {
 
 .thumbnail:hover {
     cursor: pointer;
+    transform: scale(1.1);
+    overflow: hidden;
+}
+
+.play-btn-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.5s;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.play-btn {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    position: absolute;
+    transition: all 1s;
+}
+
+.thumbnail-box:hover .play-btn-div {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.thumbnail-box:hover .thumbnail {
     transform: scale(1.1);
     overflow: hidden;
 }
@@ -178,6 +212,14 @@ div.bottom-nav div:hover {
     align-self: center;
     width: 3.5rem;
     height: 3.5rem;
+    border-radius: 50%;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: all 0.25s;
+}
+
+.home:hover {
+    box-shadow: 0 1px 6px black;
 }
 
 @media only screen and (min-width: 600px) {
