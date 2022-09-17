@@ -88,6 +88,15 @@ div#my-modal {
     width: 80%;
 }
 
+.animate {
+    animation: animatezoom 0.6s
+}
+  
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
 hr {
     border: 1px solid gray;
     margin-bottom: 1.5rem;
