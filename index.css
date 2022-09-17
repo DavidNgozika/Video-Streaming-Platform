@@ -34,6 +34,7 @@ img#logo {
     width: 8rem;
     height: 100%;
     margin-left: 1rem;
+    cursor: pointer;
 }
 
 .right {
@@ -43,11 +44,15 @@ img#logo {
     justify-content: space-between;
 }
 
-.nav-search img {
+.nav-search-icon img {
     margin-left: 1.5rem;
     width: 2.75rem;
     height: 2.75rem;
     cursor: pointer;
+}
+
+.nav-search-bar {
+    display: none;
 }
 
 img#profile {
@@ -123,7 +128,7 @@ div.bottom-nav div:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 0.5rem;
+    padding-top: 0.35rem;
     background-color: #777;
 }
 
@@ -162,4 +167,55 @@ div.bottom-nav div:hover {
     align-self: center;
     width: 3.5rem;
     height: 3.5rem;
+}
+
+@media only screen and (min-width: 600px) {
+    .top-nav {
+        align-items: center;
+        padding-right: 0 2rem;
+        /* justify-content: center; */
+    }
+
+    .bottom-nav {
+        justify-content: space-between;
+    }
+
+    .bottom-nav div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 6.5rem;
+        text-align: center;
+    }
+
+    .nav-search-icon {
+        display: none;
+    }
+
+    .nav-search-bar {
+        display: block;
+        margin-left: -8.5rem;
+    }
+    
+    .nav-search-bar input {
+        width: 12.5rem;
+        padding: 0.5rem 0.45rem;
+        border: none;
+        border-radius: 5px;
+        outline: none;
+    }
+
+    /* .thumbnail {
+        height: 35rem;
+    } */
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        background-color: olive;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+
 }
