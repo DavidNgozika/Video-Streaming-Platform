@@ -11,23 +11,20 @@
     <header>
         <nav class="navbar">
             <div class="top-nav">
-                <div>
-                    <img src="images/Flixia.PNG" alt="logo">
+                <div class="left">
+                    <img id="logo" src="images/Flixia.PNG" alt="logo">
                 </div>
-                <div>
-                    <div>🔍</div>
-                    <div><img src="images/Unisex.png" alt="profile"></div>
+                <div class="right">
+                    <div class="nav-search">🔍</div>
+                    <div><img id="profile" src="images/Unisex.png" alt="profile"></div>
                 </div>
             </div>
             <div class="bottom-nav">
-                <div>🧭Categories</div>
+                <div id="cg">Categories</div>
                 <div>All</div>
-                <div>Posts</div>
-                <div>Live</div>
-                <div>News</div>
                 <div>Popular</div>
-                <div>Events</div>
-                <div>Social</div>
+                <div>News</div>
+                <div>Live</div>
             </div>
         </nav>
     </header>
@@ -36,12 +33,26 @@
         <section>
             <div>
                 <div>
-                    <img src="" alt="">
-                    <span>12:00</span>
-                    <div>
-                        <img src="" alt="">
-                        <h4></h4>
-                        <p></p>
+                    <div class="thumbnail-box">
+                        <img 
+                            class="thumbnail" 
+                            src="images/vacation.jpg" 
+                            alt="sea cruise"
+                        >
+                        <span class="duration">12:00</span>
+                    </div>
+                    <div class="vd-details">
+                        <div>
+                            <img 
+                                class="thumbnail-small" 
+                                src="images/vacation.jpg" 
+                                alt="sea cruise"
+                            >
+                        </div>
+                        <div class="description">
+                            <h4>A fun tour of the east coast of the Atlantic.</h4>
+                            <p>The Heinz Bros - 2.3M views - 3 month ago</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -49,7 +60,7 @@
     </main>
 
     <footer>
-        <div>
+        <div class="footer-els">
             <div>Home</div>
             <div>Library</div>
             <div>Subscriptions</div>

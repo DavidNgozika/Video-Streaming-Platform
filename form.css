@@ -53,6 +53,46 @@ div.launch-pad p {
 
 /* Form Modal styles */
 
+.close-form {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    font-size: 40px;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+.close-form:hover,
+.close-form:focus {
+  color: #f21c0d;
+  cursor: pointer;
+}
+
+div#my-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: rgb(75, 75, 134);
+    padding-top: 3rem;
+}
+
+.form-modal-content {
+    background-color: whitesmoke;
+    margin: 5% auto 15%;
+    border-radius: 7px;
+    width: 80%;
+}
+
+hr {
+    border: 1px solid gray;
+    margin-bottom: 1.5rem;
+}
+
 input[type=text], input[type=password] {
     width: 100%;
     padding: 15px;
@@ -67,6 +107,18 @@ input[type=text]:focus,
 input[type=password]:focus {
     background-color: #ddd;
     outline: none;
+}
+
+div.container {
+    padding: 1rem;
+}
+
+div.form-btns {
+    display: flex;
+}
+
+div.form-btns button {
+    width: 50%;
 }
 
 .cancel-btn {
@@ -95,59 +147,6 @@ input[type=password]:focus {
 
 .submit-btn:hover {
     background-color: #006600;
-}
-
-div.form-btns {
-    display: flex;
-}
-
-div.form-btns button {
-    width: 50%;
-}
-
-div.container {
-    padding: 1rem;
-}
-
-/* The Modal Content */
-div#my-modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background: rgb(75, 75, 134);
-    padding-top: 3rem;
-}
-
-.form-modal-content {
-    background-color: whitesmoke;
-    margin: 5% auto 15%;
-    border-radius: 7px;
-    width: 80%;
-}
-
-hr {
-    border: 1px solid gray;
-    margin-bottom: 1.5rem;
-}
-
-.close-form {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    font-size: 40px;
-    font-weight: bold;
-    color: whitesmoke;
-}
-
-.close-form:hover,
-.close-form:focus {
-  color: #f21c0d;
-  cursor: pointer;
 }
 
 @media only screen and (max-width: 600px) {
