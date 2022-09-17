@@ -24,7 +24,6 @@ nav.navbar {
 div.top-nav {
     display: flex;
     justify-content: space-between;
-    /* background-color: teal; */
     height: 4rem;
     
 }
@@ -41,13 +40,12 @@ img#logo {
     width: 10.5rem;
     align-items: center;
     justify-content: space-between;
-    /* background-color: navy; */
 }
 
-.nav-search {
-    font-size: 40px;
-    margin-left: 1rem;
-    margin-bottom: 0.25rem;
+.nav-search img {
+    margin-left: 1.5rem;
+    width: 2.75rem;
+    height: 2.75rem;
 }
 
 img#profile {
@@ -89,16 +87,18 @@ div.bottom-nav div:hover {
 
 .thumbnail-box {
     position: relative;
+    margin-bottom: -.85rem;
 }
 
 .thumbnail {
     width: 100%;
+    height: 22.5rem;
     transition: all 0.8s;
 }
 
 .thumbnail:hover {
     cursor: pointer;
-    transform: scale(1.1);
+    transform: scale(1.05);
     overflow: hidden;
 }
 
@@ -115,7 +115,9 @@ div.bottom-nav div:hover {
 .vd-details {
     /* margin-top: -7px; */
     display: flex;
+    justify-content: center;
     align-items: center;
+    padding-top: 0.5rem;
     background-color: #777;
 }
 
@@ -126,11 +128,16 @@ div.bottom-nav div:hover {
     margin: 0 0.5rem;
 }
 
+.description {
+    padding: 0.5rem;
+}
+
 .description h4 {
     margin-bottom: -0.75rem;
 }
 
 .description p {
+    font-weight: 500;
     font-size: 85%;
 }
 
@@ -140,6 +147,6 @@ div.bottom-nav div:hover {
     width: 100%;
     background-color: dodgerblue;
     padding: 1rem;
-    position: absolute;
+    position: fixed;
     bottom: 0;
 }
