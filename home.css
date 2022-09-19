@@ -260,9 +260,7 @@ div.bottom-nav div:hover {
         border-radius: 5px;
         outline: none;
     }
-}
 
-@media only screen and (min-width: 768px) {
     .video-contents {
         display: flex;
         flex-direction: row;
@@ -276,10 +274,6 @@ div.bottom-nav div:hover {
         flex-direction: row;
         flex-wrap: wrap;
         width: 50%;
-    }
-
-    .vd-details {
-        height: auto;
     }
 }
 
